@@ -11,9 +11,9 @@ class CustomUserModel(AbstractUser):
     permanent_address=models.TextField(null=True)
     last_education_name=models.CharField(max_length=100,null=True)
     institute_name=models.CharField(max_length=100,null=True)
-    passing_year=models.IntegerField(max_length=100,null=True)
+    passing_year=models.IntegerField(null=True)
     grade=models.CharField(max_length=100,null=True)
-    profile_image=models.ImageField(upload_to="media\image",null=True)
+    profile_image=models.ImageField(upload_to="media/image",null=True)
     date_of_birth=models.DateField(null=True)
    
     
