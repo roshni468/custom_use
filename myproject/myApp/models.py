@@ -15,5 +15,3 @@ class CustomUserModel(AbstractUser):
     grade=models.CharField(max_length=100,null=True)
     profile_image=models.ImageField(upload_to="media/image",null=True)
     date_of_birth=models.DateField(null=True)
-   
-    
